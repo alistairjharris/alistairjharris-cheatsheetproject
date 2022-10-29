@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <link href="./styles.css" type="text/css" rel="stylesheet">
+  <title>Cheat Sheet</title>
+</head>
+
+<body>
+  <h1>Positioning HTML using CSS</h1>
+  <table>
+    <tr>
+      <th>Declaration</th>
+      <th>Role</th>
+      <th>Variables</th>
+      <th>Example</th>
+    </tr>
+    <tr class="blue">
+      <td class="declaration">z-index</td>
+      <td>The CSS z-index property specifies how far back or how far forward an element will appear on a web page when it overlaps other elements.</td>
+      <td>Positive or negative integer values. Higher integers will render the element further forward on the website.</td>
+      <td class="code"> element {<br>
+        z-index: 10;<br>
+        }</td>
+    </tr>
+    <tr class="yellow">
+      <td rowspan="5" class="declaration">position</td>
+      <td rowspan="5">Positioning in CSS provides designers and developers options for positioning HTML elements on a web page. </td>
+      <td><strong>Fixed</strong><br>
+          When the CSS position has a value of fixed, it is <em>set/pinned to a specific spot on a page</em>. The fixed element stays the same regardless of scrolling.</td>
+      <td class="code">element {<br>
+        position: fixed<br>
+        }</td>
+    </tr>
+    <tr class="yellow">
+      <td><strong>Absolute</strong><br>
+        The value absolute for the CSS property position <em>enables an element to ignore sibling elements and instead be positioned relative to its closest parent element</em> that is positioned with relative or absolute.</td>
+      <td class="code">element {<br>
+        position: absolute<br>
+        }</td>
+    </tr>
+    <tr class="yellow">
+      <td><strong>Relative</strong><br>
+        The value relative of the CSS position property <em>enables an element to be positioned relative to where it would have originally been on a web page</em>. </td>
+      <td class="code"> element {<br>
+        position: relative<br>
+        }</td>
+    </tr>
+    <tr class="yellow">
+      <td><strong>Static</strong><br>
+        This is the default value of the position property. The <em>element stays in the flow of the document and appears in the actual location where it’s located in the markup</em>.
+      </td>
+      <td class="code"> element {<br>
+        position: static<br>
+        }</td>
+    </tr>
+  <tr class="yellow">
+    <td><strong>Sticky</strong><br>
+        This value is a mix between the relative and fixed positions. <em>The element is treated as relative until a specific point or threshold is met</em>, at which point the element is then treated as fixed.
+      </td>
+      <td class="code"> element {<br>
+        position: sticky<br>
+        }</td>
+    </tr>
+  </table>
+</body>
